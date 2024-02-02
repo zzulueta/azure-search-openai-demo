@@ -269,8 +269,18 @@ const Chat = () => {
                 <div className={styles.chatContainer}>
                     {!lastQuestionRef.current ? (
                         <div className={styles.chatEmptyState}>
-                            <SparkleFilled fontSize={"120px"} primaryFill={"rgba(115, 118, 225, 1)"} aria-hidden="true" aria-label="Chat logo" />
-                            <h1 className={styles.chatEmptyStateTitle}>Chat with your Private data</h1>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                width="120"
+                                height="120"
+                                fill="rgba(115, 118, 225, 1)"
+                                aria-hidden="true"
+                                aria-label="House icon"
+                                >
+                                <path d="M12 2L1 9v13h6v-7h4v7h6V9z" />
+                            </svg>
+                            <h1 className={styles.chatEmptyStateTitle}>Hello! I am Casabot!</h1>
                             <h2 className={styles.chatEmptyStateSubtitle}>Ask anything or try an example</h2>
                             <ExampleList onExampleClicked={onExampleClicked} useGPT4V={useGPT4V} />
                         </div>
@@ -337,7 +347,7 @@ const Chat = () => {
                     <div className={styles.chatInput}>
                         <QuestionInput
                             clearOnSend
-                            placeholder="Type a new question (e.g. does my plan cover annual eye exams?)"
+                            placeholder="Type a new question (e.g. Find me a house with a master bedroom and walk-in closet)"
                             disabled={isLoading}
                             onSend={question => makeApiRequest(question)}
                         />
