@@ -2,7 +2,7 @@ import { Example } from "./Example";
 
 import styles from "./Example.module.css";
 
-const DEFAULT_EXAMPLES: string[] = ["What are the funeral arrangements?", "How to avail of the funeral benefit?", "How much is the funeral benefit?"];
+const DEFAULT_EXAMPLES: string[] = ["What is the function of SSS?", "How long is my maternity leave?", "How much is the funeral benefit?"];
 
 const GPT4V_EXAMPLES: string[] = [
     "Compare the impact of interest rates and GDP in financial markets.",
