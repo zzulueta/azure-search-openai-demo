@@ -269,18 +269,13 @@ const Chat = () => {
                 <div className={styles.chatContainer}>
                     {!lastQuestionRef.current ? (
                         <div className={styles.chatEmptyState}>
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 24 24"
-                                width="120"
-                                height="120"
-                                fill="rgba(115, 118, 225, 1)"
-                                aria-hidden="true"
-                                aria-label="House icon"
-                                >
-                                <path d="M12 2L1 9v13h6v-7h4v7h6V9z" />
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="120" height="120" fill="rgba(115, 118, 225, 1)" aria-hidden="true" aria-label="Friendship icon">
+                                <circle cx="9" cy="7" r="4" />
+                                <circle cx="15" cy="7" r="4" />
+                                <path d="M9 11c2.21 0 4 1.79 4 4s-1.79 4-4 4-4-1.79-4-4 1.79-4 4-4zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM15 15c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 2c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z" />
                             </svg>
-                            <h1 className={styles.chatEmptyStateTitle}>Hello! I am Casabot!</h1>
+
+                            <h1 className={styles.chatEmptyStateTitle}>Hello! My name is BeSSSfriend!</h1>
                             <h2 className={styles.chatEmptyStateSubtitle}>Ask anything or try an example</h2>
                             <ExampleList onExampleClicked={onExampleClicked} useGPT4V={useGPT4V} />
                         </div>
@@ -347,7 +342,7 @@ const Chat = () => {
                     <div className={styles.chatInput}>
                         <QuestionInput
                             clearOnSend
-                            placeholder="Type a new question (e.g. Find me a house with a master bedroom and walk-in closet)"
+                            placeholder="Type a new question (e.g. What is the process to avail the funeral benefit?)"
                             disabled={isLoading}
                             onSend={question => makeApiRequest(question)}
                         />

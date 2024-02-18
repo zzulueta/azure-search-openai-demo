@@ -181,7 +181,7 @@ export function Component(): JSX.Element {
                 <h1 className={styles.askTitle}>Ask your data</h1>
                 <div className={styles.askQuestionInput}>
                     <QuestionInput
-                        placeholder="Example: Do we have a house with a master bedroom and walk-in closet"
+                        placeholder="Example: Do we have a funeral benefit?"
                         disabled={isLoading}
                         initQuestion={question}
                         onSend={question => makeApiRequest(question)}

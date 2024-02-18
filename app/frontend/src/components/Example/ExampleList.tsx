@@ -2,11 +2,7 @@ import { Example } from "./Example";
 
 import styles from "./Example.module.css";
 
-const DEFAULT_EXAMPLES: string[] = [
-    "Are there houses in Texas?",
-    "Find me a house with a white interior",
-    "Get me houses below 270k with at least 2 bedrooms"
-];
+const DEFAULT_EXAMPLES: string[] = ["What are the funeral arrangements?", "How to avail of the funeral benefit?", "How much is the funeral benefit?"];
 
 const GPT4V_EXAMPLES: string[] = [
     "Compare the impact of interest rates and GDP in financial markets.",
